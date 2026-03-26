@@ -1,6 +1,6 @@
 {
-  "name": "elixer-focus-next",
-  "version": "0.1.0",
+  "name": "elixer-focus-web",
+  "version": "0.0.0-PLACEHOLDER",
   "private": true,
   "scripts": {
     "dev": "next dev",
