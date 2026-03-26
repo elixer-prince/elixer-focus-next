@@ -1,4 +1,4 @@
-import "@/app/globals.css";
+import "@/app/index.css";
 import { Metadata } from "next";
 import { PropsWithChildren } from "react";
 
