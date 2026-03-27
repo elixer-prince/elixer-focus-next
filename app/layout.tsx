@@ -9,8 +9,8 @@ export const metadata: Metadata = {
 
 const RootLayout = ({ children }: Readonly<PropsWithChildren>) => {
   return (
-    <html lang="en-JM">
-      <body className="bg-base-300 debug-border antialiased">
+    <html lang="en-JM" className="bg-base-300">
+      <body className="antialiased">
         <AppThemeProvider>{children}</AppThemeProvider>
       </body>
     </html>
