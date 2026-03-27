@@ -8,9 +8,9 @@ export type CountdownTimerContextType = {
   modalRef: RefObject<HTMLDialogElement | null>;
   elapsedIntervalRef: RefObject<ReturnType<typeof setInterval> | null>;
 
-  readonly timerBeepSoundEffectRef: RefObject<HTMLAudioElement>;
-  readonly timerOffClickSoundEffectRef: RefObject<HTMLAudioElement>;
-  readonly timerOnClickSoundEffectRef: RefObject<HTMLAudioElement>;
-  readonly timerTickingSoundEffectRef: RefObject<HTMLAudioElement>;
-  readonly resetTimerSoundEffectRef: RefObject<HTMLAudioElement>;
+  readonly timerBeepSoundEffectRef: RefObject<HTMLAudioElement | null>;
+  readonly timerOffClickSoundEffectRef: RefObject<HTMLAudioElement | null>;
+  readonly timerOnClickSoundEffectRef: RefObject<HTMLAudioElement | null>;
+  readonly timerTickingSoundEffectRef: RefObject<HTMLAudioElement | null>;
+  readonly resetTimerSoundEffectRef: RefObject<HTMLAudioElement | null>;
 };
