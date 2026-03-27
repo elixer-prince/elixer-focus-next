@@ -1,5 +1,11 @@
+import Timer from "@/app/(root)/(home)/components/Timer/Index";
+
 const Page = () => {
-  return <div>Home Page</div>;
+  return (
+    <>
+      <Timer />
+    </>
+  );
 };
 
 export default Page;

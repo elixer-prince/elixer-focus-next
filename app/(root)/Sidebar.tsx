@@ -1,18 +1,23 @@
-import Link from "next/link";
+import { defaultLinks } from "@/app/(root)/sidebarLinks";
+import SidebarLink from "@/app/components/ui/SidebarLink";
 
 const Sidebar = () => {
   return (
-    <ul>
-      <li>
-        <Link href="/">Home</Link>
-      </li>
-      <li>
-        <Link href="/tasks">Tasks</Link>
-      </li>
-      <li>
-        <Link href="/journal">Journal</Link>
-      </li>
-    </ul>
+    // Default Sidebar
+    <nav>
+      <ul className="border-r-base-content/50 fixed top-(--navbar-height) bottom-0 hidden w-(--sidebar-width) flex-col overflow-y-auto border-r px-3 pt-6 select-none md:flex">
+        {defaultLinks.map(({ icon, href, label }) => (
+          <li key={href}>
+            <SidebarLink href={href}>
+              {icon}
+              {label}
+            </SidebarLink>
+          </li>
+        ))}
+      </ul>
+
+      {/*<div className="mt-auto px-4 py-2">(Profile)</div>*/}
+    </nav>
   );
 };
 
