@@ -1,4 +1,4 @@
-import { defaultLinks } from "@/app/(root)/sidebarLinks";
+import { defaultLinks } from "@/app/(root)/components/sidebarLinks";
 import SidebarLink from "@/app/components/ui/SidebarLink";
 
 const Sidebar = () => {
