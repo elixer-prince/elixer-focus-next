@@ -1,6 +1,6 @@
 "use client";
 
-import useFocusRing from "@/app/(root)/(home)/components/Timer/Display/FocusRing/hooks/useFocusRing";
+import useFocusRing from "@/app/(root)/(home)/_components/Timer/Display/FocusRing/hooks/useFocusRing";
 
 const EndDot = () => {
   const { radius, angleDeg, CENTER } = useFocusRing();

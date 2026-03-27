@@ -1,4 +1,4 @@
-import Timer from "@/app/(root)/(home)/components/Timer/Index";
+import Timer from "@/app/(root)/(home)/_components/Timer/Index";
 
 const Page = () => {
   return (

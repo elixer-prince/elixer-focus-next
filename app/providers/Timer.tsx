@@ -1,7 +1,7 @@
 import CountdownContext from "@/app/context/timer";
 import type { CountdownTimerContextType } from "@/app/types/timer/context";
 import { getFromLocalStorage } from "@/app/utils/storage";
-import { type PropsWithChildren, useMemo, useRef } from "react";
+import { type PropsWithChildren, useMemo, useRef, useEffect } from "react";
 
 // Assets
 const beepSoundURL = "/assets/sound-effects/beep.mp3";
@@ -22,11 +22,19 @@ const CountdownProvider = ({ children }: PropsWithChildren) => {
     null,
   );
 
-  const timerBeepSoundEffectRef = useRef(new Audio(beepSoundURL));
-  const timerOffClickSoundEffectRef = useRef(new Audio(offClickSoundURL));
-  const timerOnClickSoundEffectRef = useRef(new Audio(onClickSoundURL));
-  const timerTickingSoundEffectRef = useRef(new Audio(tickingSoundURL));
-  const resetTimerSoundEffectRef = useRef(new Audio(resetTimerSoundURL));
+  const timerBeepSoundEffectRef = useRef<HTMLAudioElement | null>(null);
+  const timerOffClickSoundEffectRef = useRef<HTMLAudioElement | null>(null);
+  const timerOnClickSoundEffectRef = useRef<HTMLAudioElement | null>(null);
+  const timerTickingSoundEffectRef = useRef<HTMLAudioElement | null>(null);
+  const resetTimerSoundEffectRef = useRef<HTMLAudioElement | null>(null);
+
+  useEffect(() => {
+    timerBeepSoundEffectRef.current = new Audio(beepSoundURL);
+    timerOffClickSoundEffectRef.current = new Audio(offClickSoundURL);
+    timerOnClickSoundEffectRef.current = new Audio(onClickSoundURL);
+    timerTickingSoundEffectRef.current = new Audio(tickingSoundURL);
+    resetTimerSoundEffectRef.current = new Audio(resetTimerSoundURL);
+  }, []);
 
   const contextValue: CountdownTimerContextType = useMemo(
     () => ({

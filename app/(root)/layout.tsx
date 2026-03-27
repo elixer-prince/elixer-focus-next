@@ -1,4 +1,4 @@
-import Sidebar from "@/app/(root)/components/Sidebar";
+import Sidebar from "@/app/(root)/_components/Sidebar";
 import { PropsWithChildren } from "react";
 
 const Layout = ({ children }: PropsWithChildren) => {

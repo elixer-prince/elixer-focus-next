@@ -1,6 +1,6 @@
-import BackgroundTrack from "@/app/(root)/(home)/components/Timer/Display/FocusRing/BackgroundTrack";
-import ColouredArc from "@/app/(root)/(home)/components/Timer/Display/FocusRing/ColouredArc";
-import EndDot from "@/app/(root)/(home)/components/Timer/Display/FocusRing/EndDot";
+import BackgroundTrack from "@/app/(root)/(home)/_components/Timer/Display/FocusRing/BackgroundTrack";
+import ColouredArc from "@/app/(root)/(home)/_components/Timer/Display/FocusRing/ColouredArc";
+import EndDot from "@/app/(root)/(home)/_components/Timer/Display/FocusRing/EndDot";
 
 const FocusRing = () => {
   return (

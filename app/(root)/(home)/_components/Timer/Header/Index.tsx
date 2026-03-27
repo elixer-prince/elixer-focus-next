@@ -1,5 +1,5 @@
-import CurrentSessionType from "@/app/(root)/(home)/components/Timer/Header/CurrentSessionType";
-import SessionSwitcher from "@/app/(root)/(home)/components/Timer/Header/SessionSwitcher/Index";
+import CurrentSessionType from "@/app/(root)/(home)/_components/Timer/Header/CurrentSessionType";
+import SessionSwitcher from "@/app/(root)/(home)/_components/Timer/Header/SessionSwitcher/Index";
 
 const CountdownTimerHeader = () => {
   return (

@@ -1,8 +1,8 @@
 "use client";
 
-import ButtonControls from "@/app/(root)/(home)/components/Timer/ButtonControls/Index";
-import TimerDisplay from "@/app/(root)/(home)/components/Timer/Display/Index";
-import CountdownTimerHeader from "@/app/(root)/(home)/components/Timer/Header/Index";
+import ButtonControls from "@/app/(root)/(home)/_components/Timer/ButtonControls/Index";
+import TimerDisplay from "@/app/(root)/(home)/_components/Timer/Display/Index";
+import CountdownTimerHeader from "@/app/(root)/(home)/_components/Timer/Header/Index";
 import TimerProvider from "@/app/providers/Timer";
 
 const Timer = () => {

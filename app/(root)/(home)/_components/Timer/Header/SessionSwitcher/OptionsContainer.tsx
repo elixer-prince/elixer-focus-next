@@ -1,6 +1,6 @@
 "use client";
 
-import SessionOption from "@/app/(root)/(home)/components/Timer/Header/SessionSwitcher/SessionOption";
+import SessionOption from "@/app/(root)/(home)/_components/Timer/Header/SessionSwitcher/SessionOption";
 import useSessionSwitch from "@/app/hooks/timer/useSessionSwitch";
 import { useCurrentSessionType } from "@/app/stores/timer/session";
 

@@ -1,5 +1,5 @@
-import DropdownButton from "@/app/(root)/(home)/components/Timer/Header/SessionSwitcher/DropdownToggle";
-import OptionsContainer from "@/app/(root)/(home)/components/Timer/Header/SessionSwitcher/OptionsContainer";
+import DropdownButton from "@/app/(root)/(home)/_components/Timer/Header/SessionSwitcher/DropdownToggle";
+import OptionsContainer from "@/app/(root)/(home)/_components/Timer/Header/SessionSwitcher/OptionsContainer";
 
 const SessionSwitcher = () => {
   return (

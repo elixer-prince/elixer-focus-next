@@ -1,9 +1,9 @@
 "use client";
 
-import PauseButton from "@/app/(root)/(home)/components/Timer/ButtonControls/PauseButton";
-import ResetButton from "@/app/(root)/(home)/components/Timer/ButtonControls/ResetButton";
-import SkipButton from "@/app/(root)/(home)/components/Timer/ButtonControls/SkipButton";
-import StartButton from "@/app/(root)/(home)/components/Timer/ButtonControls/StartButton";
+import PauseButton from "@/app/(root)/(home)/_components/Timer/ButtonControls/PauseButton";
+import ResetButton from "@/app/(root)/(home)/_components/Timer/ButtonControls/ResetButton";
+import SkipButton from "@/app/(root)/(home)/_components/Timer/ButtonControls/SkipButton";
+import StartButton from "@/app/(root)/(home)/_components/Timer/ButtonControls/StartButton";
 import { useTimerPaused, useTimerRunning } from "@/app/stores/timer/countdown";
 
 const ButtonControls = () => {
