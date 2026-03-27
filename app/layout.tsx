@@ -10,7 +10,7 @@ export const metadata: Metadata = {
 const RootLayout = ({ children }: Readonly<PropsWithChildren>) => {
   return (
     <html lang="en-JM">
-      <body className="debug-border antialiased">
+      <body className="min-h-screen antialiased">
         <AppThemeProvider>{children}</AppThemeProvider>
       </body>
     </html>
