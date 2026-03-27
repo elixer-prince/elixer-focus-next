@@ -6,7 +6,7 @@ const Layout = ({ children }: PropsWithChildren) => {
     <>
       <Sidebar />
 
-      <main className="debug-border mt-(--navbar-height) mb-(--music-player-height) md:ml-(--sidebar-width)">
+      <main className="mt-(--navbar-height) mb-(--music-player-height) md:ml-(--sidebar-width)">
         {children}
       </main>
     </>
