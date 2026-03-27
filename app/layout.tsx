@@ -9,7 +9,7 @@ export const metadata: Metadata = {
 
 const RootLayout = ({ children }: Readonly<PropsWithChildren>) => {
   return (
-    <html lang="en-JM" className="bg-base-300">
+    <html lang="en-JM" className="not-motion-reduce:scroll-smooth bg-base-300">
       <body className="antialiased">
         <AppThemeProvider>{children}</AppThemeProvider>
       </body>
