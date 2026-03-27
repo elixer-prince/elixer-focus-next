@@ -1,4 +1,4 @@
-import CountdownContext from "@/app/context/timer/Context";
+import CountdownContext from "@/app/context/timer";
 import type { CountdownTimerContextType } from "@/app/types/timer/context";
 import { getFromLocalStorage } from "@/app/utils/storage";
 import { type PropsWithChildren, useMemo, useRef } from "react";

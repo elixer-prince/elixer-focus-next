@@ -1,4 +1,4 @@
-import CountdownContext from "@/app/context/timer/Context";
+import CountdownContext from "@/app/context/timer";
 import { useContext } from "react";
 
 const useCountdownContext = () => {
