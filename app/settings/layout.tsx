@@ -1,4 +1,4 @@
-import Sidebar from "@/app/settings/Sidebar";
+import Sidebar from "@/app/settings/_components/Sidebar";
 import Link from "next/link";
 import { PropsWithChildren } from "react";
 
