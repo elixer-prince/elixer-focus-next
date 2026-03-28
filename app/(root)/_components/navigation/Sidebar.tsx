@@ -1,4 +1,4 @@
-import { defaultLinks } from "@/app/(root)/_components/sidebarLinks";
+import { defaultLinks } from "@/app/(root)/_components/navigation/links";
 import SidebarLink from "@/app/components/ui/SidebarLink";
 
 const Sidebar = () => {
@@ -9,8 +9,7 @@ const Sidebar = () => {
         {defaultLinks.map(({ icon, href, label }) => (
           <li key={href}>
             <SidebarLink href={href}>
-              {icon}
-              {label}
+              {icon} {label}
             </SidebarLink>
           </li>
         ))}
