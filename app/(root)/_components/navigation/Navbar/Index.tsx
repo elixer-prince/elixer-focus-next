@@ -3,9 +3,9 @@
 import CurrentTime from "@/app/(root)/_components/navigation/Navbar/CurrentTime";
 import HamburgerIcon from "@/app/(root)/_components/navigation/Navbar/HamburgerIcon";
 import MobileLinkContainer from "@/app/(root)/_components/navigation/Navbar/MobileLinkContainer";
-import NavLogo from "@/app/(root)/_components/navigation/Navbar/NavLogo";
 import SettingsLink from "@/app/(root)/_components/navigation/Navbar/SettingsLink";
 import { useNavbarIsOpen } from "@/app/(root)/_components/navigation/Navbar/store";
+import NavLogo from "@/app/components/ui/NavLogo";
 import clsx from "clsx";
 
 const Navbar = () => {
