@@ -7,9 +7,9 @@ const Layout = ({ children }: PropsWithChildren) => {
     <div>
       <Sidebar />
 
-      <main>{children}</main>
-
-      <Link href="/">Home</Link>
+      <main className="p-8 max-sm:mt-(--navbar-height) sm:ml-(--sidebar-width)">
+        {children}
+      </main>
     </div>
   );
 };
