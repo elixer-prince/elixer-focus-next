@@ -1,6 +1,7 @@
 import Navbar from "@/app/(root)/_components/navigation/Navbar/Index";
 import Sidebar from "@/app/(root)/_components/navigation/Sidebar";
 import { PropsWithChildren } from "react";
+import { Toaster } from "react-hot-toast";
 
 const Layout = ({ children }: PropsWithChildren) => {
   return (
@@ -8,6 +9,8 @@ const Layout = ({ children }: PropsWithChildren) => {
       <Navbar />
 
       <Sidebar />
+
+      <Toaster />
 
       <main className="mt-(--navbar-height) mb-(--music-player-height) md:ml-(--sidebar-width)">
         {children}
