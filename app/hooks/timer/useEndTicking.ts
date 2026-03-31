@@ -10,7 +10,7 @@ const useEndTicking = () => {
 
     isEndTickingRef.current = true;
 
-    const sound = timerTickingSoundEffectRef.current;
+    const sound = timerTickingSoundEffectRef.current as HTMLAudioElement;
 
     try {
       sound.loop = false;
@@ -18,14 +18,14 @@ const useEndTicking = () => {
       console.error(`Error setting loop for sound: ${sound.src}`, error);
     }
 
-    playSound(sound);
+    playSound(sound as HTMLAudioElement);
   }, [isEndTickingRef, timerTickingSoundEffectRef]);
 
   const stopEndTicking = useCallback((): void => {
     if (!isEndTickingRef.current) return;
 
     isEndTickingRef.current = false;
-    stopSound(timerTickingSoundEffectRef.current);
+    stopSound(timerTickingSoundEffectRef.current as HTMLAudioElement);
   }, [isEndTickingRef, timerTickingSoundEffectRef]);
 
   return { startEndTicking, stopEndTicking };

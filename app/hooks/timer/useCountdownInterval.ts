@@ -4,13 +4,13 @@ import useEndTicking from "@/app/hooks/timer/useEndTicking";
 import useSessionSwitch from "@/app/hooks/timer/useSessionSwitch";
 import usePageTitle from "@/app/hooks/usePageTitle";
 import {
-  useResetElapsedTimeInSeconds,
-  useSetElapsedTimeInSeconds,
-  useSetRemainingTimeInSeconds,
+    useResetElapsedTimeInSeconds,
+    useSetElapsedTimeInSeconds,
+    useSetRemainingTimeInSeconds,
 } from "@/app/stores/timer/countdown";
 import {
-  useCurrentSessionType,
-  useSetPreviousSessionType,
+    useCurrentSessionType,
+    useSetPreviousSessionType,
 } from "@/app/stores/timer/session";
 import { getCurrentTimestamp } from "@/app/utils/date";
 import { clearIntervalIfItExists } from "@/app/utils/interval";
@@ -67,7 +67,7 @@ const useCountdownInterval = () => {
         if (timerHasEnded(remainingSeconds)) {
           clearIntervalIfItExists(timerIntervalRef);
           stopEndTicking();
-          playSound(timerBeepSoundEffectRef.current);
+          playSound(timerBeepSoundEffectRef.current as HTMLAudioElement);
           setPreviousSessionType(currentSessionType);
           alertUserOfTimerEnd();
           autoSwitchSessionType();

@@ -3,11 +3,11 @@ import useCountdownHelpers from "@/app/hooks/timer/useCountdownHelpers";
 import useCountdownInterval from "@/app/hooks/timer/useCountdownInterval";
 import useEndTicking from "@/app/hooks/timer/useEndTicking";
 import {
-  useRemainingTimeInSeconds,
-  useSetRemainingTimeInSeconds,
-  useSetTimerPaused,
-  useSetTimerRunning,
-  useTimerPaused,
+    useRemainingTimeInSeconds,
+    useSetRemainingTimeInSeconds,
+    useSetTimerPaused,
+    useSetTimerRunning,
+    useTimerPaused,
 } from "@/app/stores/timer/countdown";
 import { clearIntervalIfItExists } from "@/app/utils/interval";
 import { playSound } from "@/app/utils/sound";
@@ -61,7 +61,7 @@ const useStartCountdown = () => {
   const startCountdownWithSound = () => {
     if (!timerPaused) return;
 
-    playSound(timerOnClickSoundEffectRef.current);
+    playSound(timerOnClickSoundEffectRef.current as HTMLAudioElement);
     startCountdown();
   };
 

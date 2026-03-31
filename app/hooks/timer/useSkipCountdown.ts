@@ -12,7 +12,7 @@ const useSkipCountdown = (): {
   const skipCountdown = () => {
     // TODO: Implement this as an overlay
     if (confirm("Are you sure you want to skip the countdown?")) {
-      playSound(resetTimerSoundEffectRef.current);
+      playSound(resetTimerSoundEffectRef.current as HTMLAudioElement);
       autoSwitchSessionType();
     }
   };

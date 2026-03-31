@@ -3,11 +3,11 @@ import useCountdownTimerStorage from "@/app/hooks/timer/useCountdownStorage";
 import usePageTitle from "@/app/hooks/usePageTitle";
 import { useTimerRunning } from "@/app/stores/timer/countdown";
 import {
-  useCurrentSessionType,
-  useCustomSessionDuration,
-  useFocusDuration,
-  useLongBreakDuration,
-  useShortBreakDuration,
+    useCurrentSessionType,
+    useCustomSessionDuration,
+    useFocusDuration,
+    useLongBreakDuration,
+    useShortBreakDuration,
 } from "@/app/stores/timer/session";
 import { clearIntervalIfItExists } from "@/app/utils/interval";
 import { playSound } from "@/app/utils/sound";
@@ -53,7 +53,7 @@ const useResetCountdown = () => {
     // TODO: Implement this as an overlay
     if (confirm("Are you sure you want to reset the countdown?")) {
       resetCountdown();
-      playSound(resetTimerSoundEffectRef.current);
+      playSound(resetTimerSoundEffectRef.current as HTMLAudioElement);
     }
   };
 
